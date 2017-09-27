@@ -1,0 +1,23 @@
+{
+  "name": "music-player-practice",
+  "version": "1.0.0",
+  "description": "music-player create by react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lantuhui/music-player-practice.git"
+  },
+  "keywords": [
+    "music-player",
+    "react"
+  ],
+  "author": "lantu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lantuhui/music-player-practice/issues"
+  },
+  "homepage": "https://github.com/lantuhui/music-player-practice#readme"
+}
