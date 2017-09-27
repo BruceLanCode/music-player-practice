@@ -9,7 +9,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     devtool: 'eval-source-map',
     entry: [
-        path.join(__dirname,'src/index.js')
+        path.join(__dirname,'src/js/index.js')
     ],
     output: {
         path: path.join(__dirname,'/dist/'),
@@ -19,7 +19,7 @@ module.exports = {
     devServer: {
         hot: true,
         inline: true,
-        port: 3000,
+        port: 8000,
         historyApiFallback: true,
         stats: {
             assets: false,
@@ -61,7 +61,7 @@ module.exports = {
             inject: 'body',
             filename: './index.html'
         }),
-        new webpack.optimize.OccurenceOrderPlugin(),
+        // new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('development')
