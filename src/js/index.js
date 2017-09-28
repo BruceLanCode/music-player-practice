@@ -2,6 +2,13 @@
  * Created by lantu on 2017/9/27.
  */
 
-require('jquery');
+import React , { Component } from 'react';
+import { render } from 'react-dom';
+import Root from './Root';
+import '../css/reset.css';
 
-console.log($('#root'));
+
+render(
+    <Root />,
+    document.getElementById('root')
+)

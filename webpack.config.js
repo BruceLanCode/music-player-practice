@@ -18,18 +18,18 @@ module.exports = {
     },
     devServer: {
         hot: true,
-        inline: true,
+        // inline: true,
         port: 8000,
         historyApiFallback: true,
-        stats: {
-            assets: false,
-            colors: true,
-            version: false,
-            hash: false,
-            timings: false,
-            chunks: false,
-            chunkModules: false
-        }
+        // stats: {
+        //     assets: false,
+        //     colors: true,
+        //     version: false,
+        //     hash: false,
+        //     timings: false,
+        //     chunks: false,
+        //     chunkModules: false
+        // }
     },
     module: {
         rules: [
