@@ -9,6 +9,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     devtool: 'eval-source-map',
     entry: [
+        'webpack/hot/only-dev-server',
+        'react-hot-loader/patch',
         path.join(__dirname,'src/js/index.js')
     ],
     output: {
@@ -21,15 +23,15 @@ module.exports = {
         // inline: true,
         port: 8000,
         historyApiFallback: true,
-        // stats: {
-        //     assets: false,
-        //     colors: true,
-        //     version: false,
-        //     hash: false,
-        //     timings: false,
-        //     chunks: false,
-        //     chunkModules: false
-        // }
+        stats: {
+            assets: false,
+            colors: true,
+            version: false,
+            hash: false,
+            timings: false,
+            chunks: false,
+            chunkModules: false
+        }
     },
     module: {
         rules: [

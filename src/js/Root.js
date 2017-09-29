@@ -12,7 +12,7 @@ import Button from './component/button'
     render(){
         return(
             <div>
-                <p>Hello world!!!</p>
+                <p>Hello world!!</p>
                 <Button></Button>
             </div>
         )
